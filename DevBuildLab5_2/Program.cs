@@ -19,11 +19,10 @@ namespace DevBuildLab5_2
     class Player
     {
         public string playerName;
-        public Roshambo playerChoice;
 
         public virtual Roshambo GenerateRoshambo()
         {
-            return this.playerChoice;
+            return Roshambo.scissors;
         }
     }
 
@@ -56,24 +55,24 @@ namespace DevBuildLab5_2
 
     class Program
     {
-        static Status Play(Player computerPlayer, Player personPlayer)
+        static Status Play(Roshambo computerPlayer, Roshambo personPlayer)
         {
-            if (computerPlayer.playerChoice == personPlayer.playerChoice)
+            if (computerPlayer == personPlayer)
             {
                 return Status.draw;
             }
 
-            else if (computerPlayer.playerChoice == Roshambo.paper && personPlayer.playerChoice == Roshambo.rock)
+            else if (computerPlayer == Roshambo.paper && personPlayer == Roshambo.rock)
             {
                 return Status.computerPlayer;
             }
 
-            else if (computerPlayer.playerChoice == Roshambo.scissors && personPlayer.playerChoice == Roshambo.rock)
+            else if (computerPlayer == Roshambo.scissors && personPlayer == Roshambo.rock)
             {
                 return Status.personPlayer;
             }
 
-            else if (computerPlayer.playerChoice == Roshambo.rock && personPlayer.playerChoice == Roshambo.paper)
+            else if (computerPlayer == Roshambo.rock && personPlayer == Roshambo.paper)
             {
                 return Status.personPlayer;
             }
@@ -90,9 +89,10 @@ namespace DevBuildLab5_2
         {
             Roshambo randomPlay;
             Roshambo rockchoice;
+            Roshambo choiceRPS;
+            string playerChoice;
             string team;
-            Roshambo playerChoice;
-            Status person;
+            Status person = new Status();
 
             Console.WriteLine("Welcome to Rock Paper Scissors!");
 
@@ -104,15 +104,34 @@ namespace DevBuildLab5_2
             team = Console.ReadLine().ToLower();
 
             Console.Write("Rock, paper, or scissors? (R/P/S):");
-            playerChoice = Convert.ro
-                Console.ReadLine().ToLower();
+
+            playerChoice = Console.ReadLine().ToLower();
+
+            if (playerChoice == "rock")
+            {
+                choiceRPS = Roshambo.rock;
+            }
+            else if (playerChoice == "scissor")
+            {
+                choiceRPS = Roshambo.scissors;
+            }
+            else
+            { 
+                choiceRPS = Roshambo.rock; 
+            }
+
+
+
+
+            ///*** Need to Convert playerChoice to the enum Roshambo***
+            
             
             if (team == "tigers")
             {
-                TigersPlayer rnd = new TigersPlayer();
-                randomPlay = rnd.GenerateRoshambo();
-                Console.WriteLine(randomPlay);
-                person = Play(randomPlay, playerChoice);
+
+                TigersPlayer weapon = new TigersPlayer();
+                randomPlay = weapon.GenerateRoshambo();
+                Play(randomPlay, choiceRPS);
             }
             else
             {
