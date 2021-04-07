@@ -1,0 +1,13 @@
+C:\Workgroup\DevBuildLab5_2\DevBuildLab5_2\obj\Debug\netcoreapp3.1\DevBuildLab5_2.csprojAssemblyReference.cache
+C:\Workgroup\DevBuildLab5_2\DevBuildLab5_2\obj\Debug\netcoreapp3.1\DevBuildLab5_2.AssemblyInfoInputs.cache
+C:\Workgroup\DevBuildLab5_2\DevBuildLab5_2\obj\Debug\netcoreapp3.1\DevBuildLab5_2.AssemblyInfo.cs
+C:\Workgroup\DevBuildLab5_2\DevBuildLab5_2\obj\Debug\netcoreapp3.1\DevBuildLab5_2.csproj.CoreCompileInputs.cache
+C:\Workgroup\DevBuildLab5_2\DevBuildLab5_2\bin\Debug\netcoreapp3.1\DevBuildLab5_2.exe
+C:\Workgroup\DevBuildLab5_2\DevBuildLab5_2\bin\Debug\netcoreapp3.1\DevBuildLab5_2.deps.json
+C:\Workgroup\DevBuildLab5_2\DevBuildLab5_2\bin\Debug\netcoreapp3.1\DevBuildLab5_2.runtimeconfig.json
+C:\Workgroup\DevBuildLab5_2\DevBuildLab5_2\bin\Debug\netcoreapp3.1\DevBuildLab5_2.runtimeconfig.dev.json
+C:\Workgroup\DevBuildLab5_2\DevBuildLab5_2\bin\Debug\netcoreapp3.1\DevBuildLab5_2.dll
+C:\Workgroup\DevBuildLab5_2\DevBuildLab5_2\bin\Debug\netcoreapp3.1\DevBuildLab5_2.pdb
+C:\Workgroup\DevBuildLab5_2\DevBuildLab5_2\obj\Debug\netcoreapp3.1\DevBuildLab5_2.dll
+C:\Workgroup\DevBuildLab5_2\DevBuildLab5_2\obj\Debug\netcoreapp3.1\DevBuildLab5_2.pdb
+C:\Workgroup\DevBuildLab5_2\DevBuildLab5_2\obj\Debug\netcoreapp3.1\DevBuildLab5_2.genruntimeconfig.cache
